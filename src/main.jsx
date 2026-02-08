@@ -1,14 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-
-import './themes/dark.css'
-import './styles.css'
-
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './styles.css';  // فقط یک فایل استایل کافی است
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <>
-  <link id='theme-link' rel="stylesheet" href='/src/themes/light.css'/>
-  <App />
-  </>
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );

@@ -1,2 +1,6 @@
-You may use this template for personal or commercial projects.
-You may not resell or redistribute it as-is.
+This template is ready for personal and commercial use, with or without attribution.
+
+Selling Tips
+Provide a live demo on Netlify or Vercel
+Include images or GIF previews (Hero + toggle theme recommended)
+Keep installation and customization instructions clear and simple

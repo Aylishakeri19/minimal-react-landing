@@ -1,39 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Footer from './components/Footer';
+import './styles.css';
 
 function App() {
-  const [theme,setTheme] = useState('light');
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   const toggleTheme = () => {
-    const themeLink = document.getElementById('theme-link');
-    if (theme === 'light'){
-      themeLink.href = '/src/themes/dark.css';
-      setTheme('dark');
-    } else {
-      themeLink.href = '/src/themes/light.css';
-         setTheme('light');
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
+
   return (
     <div>
-      <header className='container'>
-         <h1>Minimal Landing</h1>
-         <button onClick={toggleTheme}>
-          {theme === 'light' ? 'Switch to dark':'Switch to Light'}
-         </button>
-      </header>
-      <section className='hero-container'>
-        <h2>Fast & Clean</h2>
-        <p>Built </p>
-        <button>Download app</button>
-      </section>
       <Header />
       <Hero />
       <Features />
       <Footer />
-      
+      <button className="toggle-theme" onClick={toggleTheme}>
+        {theme === 'light' ? 'Switch to Dark' : 'Switch to Light'}
+      </button>
     </div>
   );
 }
