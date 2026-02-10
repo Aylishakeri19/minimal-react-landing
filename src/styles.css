@@ -2,8 +2,8 @@
 :root[data-theme='light'] {
   --bg: #ffffff;
   --surface: #f9fafb;
-  --text: #1f2933;
-  --muted: #6b7280;
+  --text: #111111;
+  --muted: #555555;
   --primary: #2563eb;
   --border: #e5e7eb;
   --particle-color: rgba(0,0,0,0.7);
@@ -12,14 +12,21 @@
 :root[data-theme='dark'] {
   --bg: #0f172a;
   --surface: #020617;
-  --text: #e5e7eb;
-  --muted: #94a3b8;
+  --text: #ffffff;
+  --muted: #aaaaaa;
   --primary: #38bdf8;
   --border: #1e293b;
   --particle-color: rgba(255,255,255,0.7);
 }
 
 html,body,#root {
+  min-height: 100vh;
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+.app {
   min-height: 100vh;
   background: var(--bg);
 }
