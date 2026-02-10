@@ -1,4 +1,4 @@
-/* ================== تم روشن و تاریک ================== */
+/* ================== Light and dark theme ================== */
 :root[data-theme='light'] {
   --bg: #ffffff;
   --surface: #f9fafb;
@@ -19,7 +19,12 @@
   --particle-color: rgba(255,255,255,0.7);
 }
 
-/* ================== ریست و پایه ================== */
+html,body,#root {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* ================== Reset and bast ================== */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -56,6 +61,7 @@ body {
 
 /* ================== Hero ================== */
 .hero {
+  min-height: 100vh;
   text-align: center;
   padding: 6rem 1rem;
   background: var(--bg);
@@ -109,7 +115,7 @@ body {
   margin: 2rem 0 0 0;
 }
 
-/* ================== دکمه Toggle Theme ================== */
+/* ================== Button Toggle Theme ================== */
 .toggle-theme {
   position: fixed;
   bottom: 20px;

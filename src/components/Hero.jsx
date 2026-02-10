@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Hero() {
-  const particles = Array.from({ length: 20 }); // 20 ذره
+  const particles = Array.from({ length: 22 }); // 20 particle
 
   return (
     <section className="hero">

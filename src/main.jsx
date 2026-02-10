@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import './styles.css';  // فقط یک فایل استایل کافی است
+import './styles.css';  // style file
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
