@@ -1,5 +1,8 @@
 # Minimal Landing React Template
 
+Template by Liaverse 
+Modern UI Templates for Developers & Startups 
+
 A **modern and minimal React landing page template** with light/dark theme toggle and subtle effects like animated particles in the Hero section.  
 Fully responsive, works perfectly on **desktop, tablet, and mobile**.
 
@@ -19,7 +22,7 @@ Perfect for showcasing apps, digital products, or personal projects.
 ---
 
 ## Demo
-
+link of demo: https://minimal-react-page.netlify.app
 ![Hero Animation](./src/assets/hero-toggle.gif)  
 *Include a GIF or image showing the live landing page.*
 
